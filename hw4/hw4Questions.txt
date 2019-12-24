@@ -1,0 +1,71 @@
+Question 1:
+The ForwardElimination algorithm doesn't work properly for that system of equations because after
+
+the first pass of the algorithm the next value of the diagonal going from upper left to lower right,
+
+position (1,1) to (2,2), becomes 0.
+
+When that happens the algorithm cannot continue because in the next iteration it must divide by that 
+number and any number divided by 0 is undefined.
+
+
+[1, 1, 1, 6]      [1, 1, 1, 6]    Cannot continue because the algorithm does 1/0 ((3, 2)/(2, 2))
+
+[1, 1, 2, 9]  ->  [0, 0, 1, 3] -> which is undefined.
+
+[1, 2, 3, 14]     [0, 1, 2, 8]
+
+
+
+The BetterForwardElimination algorithm fixes this by swapping the rows so that the row with the
+
+largest value that it needs to divide by is the pivot row.
+
+
+[1, 1, 1, 6]      [1, 1, 1, 6]    Second and [1, 1, 1, 6]    [1, 1, 1, 6] 
+
+[1, 1, 2, 9]  ->  [0, 0, 1, 3] -> third row  [0, 1, 2, 8] -> [0, 1, 2, 8] -> Algorithm Complete
+
+[1, 2, 3, 14]     [0, 1, 2, 8]    swap       [0, 0, 1, 3]    [0, 0, 1, 3]
+
+Question 2:
+
+The given system of linear equations,
+
+x   +   y   +   z   =   6
+x   +   y   +   2z  =   9
+2x  +   2y  +   3z  =   15
+
+The algorithm can not solve this system because x and y both become 0 in the process of
+
+Gauss - Jordan Elimination. Since in all equations, x and y have the same coefficients,
+
+this should raise suspicion when solving. For the given solution, 1 = x, 2 = y, 3 = z,
+
+the math works, and this is a solution. However when actually attempting to solve the system,
+
+we can see that, for z = 3, which we know works, you can reduce the system into this.
+
+x   +   y   +   3   =   6
+x   +   y   +   6   =   9
+2x  +   2y  +   9   =   15
+
+When simplied, this system occurs
+
+x   +   y   =   3
+x   +   y   =   3
+x   +   y   =   3
+
+These are all the same equation, meaning that for the value of z = 3, there are infinitely many solutions,
+
+some of which are,
+
+x = 4, y = -1
+x = 5, y = -2.
+
+This is no fault of the algorithm, and by not finding a solution, it is atually doing its job since there are
+
+an infinite number to find. Nothing needs to be done to fix the algorithm other than providing it proper
+
+input.
+
