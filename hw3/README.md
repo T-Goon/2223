@@ -12,7 +12,7 @@ A C++ program that uses a naive O(n^2) algorithm to count the number of inversio
 
 ## fastinversioncount.cpp
 
-A C++ program that has the same function as easyinversioncount.cpp but uses an algorithm that is O(nlog(n))
+A C++ program that has the same function as easyinversioncount.cpp but uses an algorithm that is O(nlog(n)).
 
 ## graycodesarefun.cpp
 
