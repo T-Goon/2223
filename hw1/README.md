@@ -11,5 +11,7 @@ Then launch the hw1 executable. Select f or s to move first or second. Then type
 green, 'y' for yellow or 'o' for orange, followed by the number of pieces of that color
 you wish to take. Continue to move until you either win or lose. Good Luck!
 
+More details can be found in "CS2223HW1_DoubleTrouble_prelim.pdf".
+
 ![image](https://user-images.githubusercontent.com/32044950/120135777-fab39a00-c19e-11eb-9af2-907e2dd10ff7.png)
 
