@@ -1,4 +1,4 @@
-# hw2 Lucas Numbers
+# hw2 Lucas Numbers and Suribach
 
 ## lucas.cpp
 
