@@ -1,4 +1,13 @@
+# hw6 The N Queens Problem
 Adrian Curless, Tim Goon, Patrick Houlihan
+
+## nqueen_solver.cpp
+
+A C++ program that uses backtracking to find the first solution to the Queens Problem with a board size of n = [4, 100].
+
+## queens.cpp
+
+A C++ program that uses backtracking to find the all solutions to the Queens Problem with a board size of n = [4, 20].
 
 Questions:
 
