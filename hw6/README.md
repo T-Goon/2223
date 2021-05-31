@@ -19,3 +19,5 @@ across the row.
 the first solution.
 4. We need increased efficiency, because the number of solutions exponentially increases as n
 increases.
+
+More details on the 2 programs can be found in "BacktrackingAndThe_n-QueensProblem_WPI-1.pdf".
